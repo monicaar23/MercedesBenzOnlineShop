@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <suite name="Suite1">
+  <test name="PostiveCase">
+  	<parameter name="scenario" value="All Fields provided"/> 
+    <parameter name="firstName" value="Mo"/> 
+    <parameter name="lastName" value="Jo"/> 
+    <parameter name="email" value="Mojo@gmail.com"/> 
+    <parameter name="phoneNo" value="+66912345678"/> 
+     <parameter name="browser" value="firefox"/> 
+    <classes>
+       <class name="contactMe.ContactMe" />
+    </classes>
+    </test>
+    <test name="NegativeCase1">
+    <parameter name="scenario" value="Last Name not provided"/> 
+    <parameter name="firstName" value="Br"/> 
+    <parameter name="lastName" value=""/> 
+    <parameter name="email" value="Brda@gmail.com"/> 
+    <parameter name="phoneNo" value="+66912345678"/> 
+    <parameter name="browser" value="chrome"/> 
+    <classes>
+       <class name="contactMe.ContactMe" />
+    </classes>
+  </test>
+ 
+   </suite>
